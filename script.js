@@ -48,3 +48,21 @@ const glSwiper = new Swiper(".values-swiper", {
     swiper: thumbsSwiper,
   },
 });
+
+const preferencesSwiper = new Swiper('.preferences-slider', {
+  wrapperClass: 'preferences-slider-wrapper',
+  slideClass: 'preferences-slider-slide',
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 1,
+  breakpoints: {
+    850: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+  navigation: {
+    nextEl: ".preferences-slider-next",
+    prevEl: ".preferences-slider-prev",
+  },
+});

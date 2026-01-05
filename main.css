@@ -308,7 +308,7 @@ table {
   position: relative;
 }
 
-.values::after {
+.values::before {
   position: absolute;
   pointer-events: none;
   background: linear-gradient(180deg, #f9f0e5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
@@ -529,7 +529,7 @@ table {
   line-height: 1.69231;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #676869;
+  color: var(--colorGray);
   transform: translateY(-20px);
 }
 
@@ -660,3 +660,97 @@ table {
 .story-img-box > h2 {
   display: none;
 }
+
+.preferences-wrapper {
+  padding: 75px 120px 74px;
+}
+
+.preferences-wrapper h2 {
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 26px;
+  line-height: 1.53846;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--colorDarkBlue);
+  padding-bottom: 50px;
+}
+
+
+.preferences-slider-container {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.preferences-slider-wrapper {
+  display: flex !important;
+  flex-grow: 1;
+}
+
+
+.preferences-slider-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center;
+  aspect-ratio: 1;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.preferences-slider-slide--1 { background-color: #f0eeef; }
+.preferences-slider-slide--2 { background: #f9f0e6; }
+
+
+.preferences-slider-slide h3,
+.preferences-slider-slide p {
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
+  text-align: center;
+}
+
+.preferences-slider-slide h3 {
+  font-size: 22px;
+  line-height: 1.81818;
+  letter-spacing: 0.04em;
+  color: var(--colorDarkBlue);
+}
+
+.preferences-slider-slide p {
+  font-size: 15px;
+  line-height: 1.53333;
+  letter-spacing: 0.03em;
+  color: var(--colorGray);
+}
+
+.preferences-slider-next,
+.preferences-slider-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.preferences-slider-next { right: -30px; }
+.preferences-slider-prev { left: -30px; }
+
+.preferences-button-donw-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preferences-review-stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.preferences-review-stars img {
+  margin-right: 14px;
+}
+
+.preferences-button { margin-bottom: 10px; }
+.story-button { margin-bottom: 20px; }
