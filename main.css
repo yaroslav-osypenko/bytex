@@ -15,3 +15,291 @@
   font-style: normal;
   font-display: swap;
 }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --colorLight: #ffffff;
+  --colorDarkBlue: #01005B;
+  --colorGray: #676869;
+  --colorLightGray: #6C6C6C;
+  --colorBlue: #2A2996;
+  --maxWidthContainer: 1464px;
+  --fontFamilyPrimary: "Sofia Pro";
+  --fontFamily2nd: "Suisse Int'l";
+  --font-weight: 400;
+}
+
+.container {
+  max-width: var(--maxWidthContainer);
+  padding-inline: 50px;
+  margin-inline: auto;
+}
+
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+.button-with-arrow {
+  padding: 20px 110px 15px 55px;
+  font-family: var(--fontFamily2nd), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: clamp(14px, 0.35vw + 12.88px, 18px);
+  letter-spacing: 0.03em;
+  color: #fff;
+  border-radius: 5px;
+  background-color: var(--colorDarkBlue);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-with-arrow:hover {
+  scale: 1.05;
+}
+
+.button-with-arrow::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 10px;
+  top: 45%;
+  transform: translateX(-45%);
+  right: 65px;
+  background: url("./images/header-icons/header-arrow.svg");
+}
+
+.header-advantages {
+  font-family: var(--fontFamily2nd), sans-serif;
+  font-size: 11px;
+
+  line-height: 3.18182;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #565656;
+  background-color: #f9f0e5;
+  min-height: 36px;
+  margin-bottom: 30px;
+}
+
+.header-main-wrapper {
+  display: flex;
+}
+
+.header-benefits {
+  margin-left: 46px;
+}
+
+.header-benefits-wrapper {
+  padding-left: 6px;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 15px;
+}
+
+.header-benefits-wrapper h2{
+  font-size: clamp(20px, 1.58vw + 14.95px, 38px);
+  line-height: 1.18421;
+  letter-spacing: 0.04em;
+  color: var(--colorDarkBlue);
+  margin-bottom: 25px;
+}
+
+.header-benefits > img {
+  margin-bottom: 60px;
+}
+
+.header-benefits-list {
+  display: flex;
+  flex-direction: column;
+}
+.header-benefits-list-item {
+  display: flex;
+  line-height: 1.53333;
+  letter-spacing: 0.03em;
+  color: var(--colorGray);
+  margin-bottom: 23px;
+}
+
+.header-benefits-list-item:last-child {
+  margin-bottom: 40px;
+}
+
+.header-benefits-list-item span:first-of-type {
+  display: inline-block;
+  border-radius: 50%;
+  height: 31px;
+  aspect-ratio: 1;
+  background-color: #f9f0e5;
+  margin-right: 14px;
+}
+
+.header-benefits-list-item span:last-of-type {
+  display: inline-block;
+  line-height: 1.53333;
+  letter-spacing: 0.03em;
+  color: var(--colorGray);
+  align-self: center;
+}
+
+.header-benefits-list-item--1 span:first-of-type,
+.header-benefits-list-item--2 span:first-of-type,
+.header-benefits-list-item--3 span:first-of-type{
+  position: relative;
+}
+
+.header-benefits-list-item--1 span:first-of-type::before,
+.header-benefits-list-item--2 span:first-of-type::before,
+.header-benefits-list-item--3 span:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-benefits-list-item--1 span:first-of-type::before {
+  height: 20.5px;
+  aspect-ratio: 1;
+  background: url("./images/header-icons/header-icons.svg") center/cover no-repeat;
+}
+.header-benefits-list-item--2 span:first-of-type::before {
+  height: 15px;
+  width: 19px;
+  background: url("./images/header-icons/header-icons--2.svg") center/cover no-repeat;
+}
+.header-benefits-list-item--3 span:first-of-type::before {
+  height: 13px;
+  width: 14px;
+  background: url("./images/header-icons/header-icons--3.svg") center/cover no-repeat;
+}
+
+.header-benefits-review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.header-benefits-review-header img:first-of-type {
+  margin-right: 14px;
+}
+
+.header-benefits-review-header img:last-of-type {
+  margin-right: 7px;
+}
+
+.header-benefits-review-header span:first-of-type {
+  color: var(--colorGray);
+  margin-right: 20px;
+}
+
+
+.header-benefits-review-head-text {
+  font-family: var(--fontFamily2nd), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 11px;
+  line-height: 1.81818;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+
+.header-review-stars-and-name span{
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 15px;
+  line-height: 1.53333;
+  letter-spacing: 0.03em;
+  color: var(--colorGray);
+}
+
+.header-benefits-review {
+  position: relative;
+  z-index: 5;
+  padding: 20px 16px;
+  background-color: var(--colorLight);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: -76px;
+}
+
+.header-benefits-review-main-text {
+  font-family: var(--fontFamily2nd), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 12px;
+  line-height: 1.91667;
+  letter-spacing: 0.04em;
+  color: var(--colorGray);
+}
+
+.header-image {
+  margin-top: 100px;
+}
+
+.header-benefits-button {
+  margin-bottom: 46px;
+}
+
+.header-img-phone-version,
+.header-img-double-version{
+  display: none;
+}
+
+.header-image img {
+  max-height: 100%;
+  max-width: 725px;
+}
+
+.header-advantages span:not([class]) {
+  display: inline-block;
+  margin-inline: 6px;
+  height: 8px;
+  width: 1px;
+  background-color: var(--colorLightGray);
+}
