@@ -521,6 +521,19 @@ table {
   padding-left: 30px;
 }
 
+.values-slider span {
+  display: block;
+  font-family: var(--fontFamily2nd), sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.69231;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #676869;
+  transform: translateY(-20px);
+}
+
+
 
 .values-swiper-button-prev::after,
 .values-swiper-button-next::after {
