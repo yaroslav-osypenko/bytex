@@ -88,6 +88,7 @@ table {
 }
 
 .button-with-arrow {
+  border: 0;
   padding: 20px 110px 15px 55px;
   font-family: var(--fontFamily2nd), sans-serif;
   font-weight: var(--font-weight);
@@ -427,9 +428,21 @@ table {
   margin-bottom: 15px;
 }
 
-.values-inform h2 {
+.values-inform h2{
   margin-bottom: 75px;
   font-size: clamp(26px, 1.65vw + 7.9px, 32px);
+}
+
+.values-mobile-title {
+  display: none;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: clamp(26px, 1.65vw + 7.9px, 32px);
+  line-height: 1.30769;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #01005b;
+  margin-bottom: 28px;
 }
 
 .values-inform-head-of-items--1 span,
@@ -661,6 +674,12 @@ table {
   display: none;
 }
 
+.story-button {
+  margin-bottom: 20px;
+}
+
+
+
 .preferences-wrapper {
   padding: 75px 120px 74px;
 }
@@ -754,3 +773,35 @@ table {
 
 .preferences-button { margin-bottom: 10px; }
 .story-button { margin-bottom: 20px; }
+
+.fans-inner h2 {
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 400;
+  font-size: clamp(26px, 23.24px + 0.6vw, 32px);
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #01005b;
+  margin-bottom: 30px;
+}
+
+.fans-inner p {
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.53333;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #676869;
+  margin-bottom: 55px;
+}
+
+.fans-img-box {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.fans-img-mobile {
+  display: none;
+}
