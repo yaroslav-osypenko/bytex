@@ -47,6 +47,7 @@ const glSwiper = new Swiper(".values-swiper", {
   thumbs: {
     swiper: thumbsSwiper,
   },
+  loop: true,
 });
 
 const preferencesSwiper = new Swiper('.preferences-slider', {

@@ -1221,6 +1221,7 @@ table {
   line-height: 1.1;
 }
 
+
 @media (max-width: 1200px) {
   .story-text-box {
     padding-left: 80px;
@@ -1261,10 +1262,17 @@ table {
 
 
 @media (max-width: 900px) {
+
+  .values-slider {
+    margin-bottom: 60px;
+  }
+
   .values-inform h2 {
     display: none;
   }
-
+  .values-box-text {
+    margin-bottom: 20px;
+  }
   .values-box-text h2 {
     display: block;
     font-family: var(--fontFamilyPrimary), sans-serif;
