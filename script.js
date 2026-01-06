@@ -89,3 +89,54 @@ const reviewSwiper = new Swiper('.review-slider', {
     prevEl: ".review-slider-prev",
   },
 });
+
+document.querySelectorAll('.questions__acordion').forEach((details) => {
+  const summary = details.querySelector('summary');
+  const content = details.querySelector('.process__acordion-text');
+
+  summary.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (!details.hasAttribute('open')) {
+      document.querySelectorAll('.questions__acordion[open]').forEach((openDetails) => {
+        closeElement(openDetails);
+      });
+      openElement(details);
+    } else {
+      closeElement(details);
+    }
+  });
+
+  function openElement(el) {
+    const content = el.querySelector('.process__acordion-text');
+    el.style.overflow = 'hidden';
+    el.setAttribute('open', '');
+
+    const startHeight = 0;
+    const endHeight = content.offsetHeight;
+
+    el.animate([
+      { height: summary.offsetHeight + 'px' },
+      { height: (summary.offsetHeight + endHeight) + 'px' }
+    ], {
+      duration: 300,
+      easing: 'ease-out'
+    });
+  }
+
+  function closeElement(el) {
+    const content = el.querySelector('.process__acordion-text');
+    const startHeight = el.offsetHeight;
+    const endHeight = summary.offsetHeight;
+
+    const anim = el.animate([
+      { height: startHeight + 'px' },
+      { height: endHeight + 'px' }
+    ], {
+      duration: 300,
+      easing: 'ease-out'
+    });
+
+    anim.onfinish = () => el.removeAttribute('open');
+  }
+});
