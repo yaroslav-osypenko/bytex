@@ -599,7 +599,17 @@ table {
   color: #828282;
 }
 
-.values-button-and-start-mobile {
+.values-mobile-title,
+.values-button-and-start-mobile,
+.story-image-mobile-version,
+.story-button::after,
+.story-img-box > h2,
+.fans-img-mobile,
+.questions-button-and-start-mobile,
+.love__text-box p:last-of-type,
+.love__image-mobile,
+.footer-button-and-start-mobile,
+.values-box-text h2 {
   display: none;
 }
 
@@ -607,9 +617,6 @@ table {
   margin-bottom: 90px;
 }
 
-.story-image-mobile-version {
-  display: none;
-}
 
 .story {
   background: #f0eeef;
@@ -647,7 +654,6 @@ table {
   margin-top: 110px;
 }
 
-
 .story-img-wrapper {
   position: relative;
   padding-top: 130px;
@@ -666,19 +672,9 @@ table {
   right: -65px;
 }
 
-.story-button::after {
-  display: none;
-}
-
-.story-img-box > h2 {
-  display: none;
-}
-
 .story-button {
   margin-bottom: 20px;
 }
-
-
 
 .preferences-wrapper {
   padding: 75px 120px 74px;
@@ -775,8 +771,8 @@ table {
 .story-button { margin-bottom: 20px; }
 
 .fans-inner h2 {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: clamp(26px, 23.24px + 0.6vw, 32px);
   line-height: 1.25;
   letter-spacing: 0.04em;
@@ -786,8 +782,8 @@ table {
 }
 
 .fans-inner p {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 15px;
   line-height: 1.53333;
   letter-spacing: 0.03em;
@@ -802,9 +798,6 @@ table {
   justify-content: center;
 }
 
-.fans-img-mobile {
-  display: none;
-}
 
 .review-slide-head > span {
   display: inline-block;
@@ -816,8 +809,8 @@ table {
 }
 
 .review-slide-stars-and-name span {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 15px;
   line-height: 1.53333;
   letter-spacing: 0.03em;
@@ -831,11 +824,6 @@ table {
   border-radius: 8px;
 }
 
-
-/*.review-slide-wrap {*/
-/*  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.08);*/
-/*}*/
-
 .review-slide-head {
   display: flex;
   margin-bottom: 10px;
@@ -846,8 +834,8 @@ table {
 }
 
 .review-slider-text {
-  font-family: "Suisse Int'l", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamily2nd), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 12px;
   line-height: 1.91667;
   letter-spacing: 0.04em;
@@ -916,8 +904,8 @@ table {
 .questions__acordion summary h3 {
   padding-bottom: 29px;
   padding-top: 23px;
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 18px;
   line-height: 1.33333;
   letter-spacing: 0.04em;
@@ -1014,8 +1002,8 @@ table {
 }
 
 .questions__acordion-box h2 {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: clamp(26px, 0.6vw + 23.24px, 32px);
   line-height: 1.25;
   letter-spacing: 0.04em;
@@ -1024,7 +1012,6 @@ table {
 }
 
 .questions-button-and-start-mobile {
-  display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -1055,8 +1042,8 @@ table {
 
 .impact-inner h2 {
   padding-top: 40px;
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 25px;
   line-height: 1.6;
   letter-spacing: 0.04em;
@@ -1088,8 +1075,8 @@ table {
 }
 
 .impact-item-wrapper span:first-of-type {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 22px;
   line-height: 0.90909;
   letter-spacing: 0.02em;
@@ -1098,8 +1085,8 @@ table {
 }
 
 .impact-item-wrapper span:last-of-type {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 1.42857;
   letter-spacing: 0.03em;
@@ -1121,8 +1108,8 @@ table {
 
 
 .love__text-box h2 {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: 0.04em;
@@ -1130,13 +1117,10 @@ table {
   color: #01005b;
 }
 
-.love__text-box p:last-of-type {
-  display: none;
-}
 
 .love__text-box p:first-of-type {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 15px;
   line-height: 1.46667;
   letter-spacing: 0.03em;
@@ -1145,9 +1129,6 @@ table {
   margin-bottom: 45px;
 }
 
-.love__image-mobile {
-  display: none;
-}
 
 .love__image-box {
   display: flex;
@@ -1162,7 +1143,6 @@ table {
 }
 
 .footer-button-and-start-mobile {
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1197,8 +1177,8 @@ table {
 }
 
 .footer-item span {
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-family: var(--fontFamilyPrimary), sans-serif;
+  font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 1.42857;
   letter-spacing: 0.03em;
@@ -1237,8 +1217,8 @@ table {
   cursor: pointer;
 }
 
-.values-box-text h2{
-  display: none;
+.preferences-review-stars span {
+  line-height: 1.1;
 }
 
 @media (max-width: 1200px) {
@@ -1287,8 +1267,8 @@ table {
 
   .values-box-text h2 {
     display: block;
-    font-family: "Sofia Pro", sans-serif;
-    font-weight: 400;
+    font-family: var(--fontFamilyPrimary), sans-serif;
+    font-weight: var(--font-weight);
     font-size: clamp(26px, 1.65vw + 7.9px, 32px);
     line-height: 1.30769;
     letter-spacing: 0.04em;
@@ -1446,8 +1426,8 @@ table {
   }
   .love__text-box p:last-of-type {
     display: block;
-    font-family: "Sofia Pro", sans-serif;
-    font-weight: 400;
+    font-family: var(--fontFamilyPrimary), sans-serif;
+    font-weight: var(--font-weight);
     font-size: 15px;
     line-height: 1.46667;
     letter-spacing: 0.03em;
