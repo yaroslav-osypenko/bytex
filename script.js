@@ -66,3 +66,26 @@ const preferencesSwiper = new Swiper('.preferences-slider', {
     prevEl: ".preferences-slider-prev",
   },
 });
+
+const reviewSwiper = new Swiper('.review-slider', {
+  wrapperClass: 'review-slider-wrapper',
+  slideClass: 'review-slider-slide',
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1150: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+  navigation: {
+    nextEl: ".review-slider-next",
+    prevEl: ".review-slider-prev",
+  },
+});
